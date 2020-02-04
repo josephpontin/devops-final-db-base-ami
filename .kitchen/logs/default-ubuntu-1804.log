@@ -1,0 +1,132 @@
+I, [2020-02-04T16:26:04.502605 #16952]  INFO -- default-ubuntu-1804: -----> Creating <default-ubuntu-1804>...
+I, [2020-02-04T16:26:10.511960 #16952]  INFO -- default-ubuntu-1804: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2020-02-04T16:26:15.447288 #16952]  INFO -- default-ubuntu-1804: ==> default: Importing base box 'bento/ubuntu-18.04'...
+I, [2020-02-04T16:26:32.699088 #16952]  INFO -- default-ubuntu-1804: [KProgress: 20%[KProgress: 40%[KProgress: 50%[K==> default: Matching MAC address for NAT networking...
+I, [2020-02-04T16:26:33.594400 #16952]  INFO -- default-ubuntu-1804: ==> default: Checking if box 'bento/ubuntu-18.04' version '201912.14.0' is up to date...
+I, [2020-02-04T16:26:35.667265 #16952]  INFO -- default-ubuntu-1804: ==> default: Setting the name of the VM: kitchen-mongod-replica-config-default-ubuntu-1804-674de062-3940-4656-9d8f-659270e5726a
+I, [2020-02-04T16:26:39.110906 #16952]  INFO -- default-ubuntu-1804: ==> default: Clearing any previously set network interfaces...
+I, [2020-02-04T16:26:39.218936 #16952]  INFO -- default-ubuntu-1804: ==> default: Preparing network interfaces based on configuration...
+I, [2020-02-04T16:26:39.219210 #16952]  INFO -- default-ubuntu-1804:     default: Adapter 1: nat
+I, [2020-02-04T16:26:39.338943 #16952]  INFO -- default-ubuntu-1804: ==> default: Forwarding ports...
+I, [2020-02-04T16:26:39.469265 #16952]  INFO -- default-ubuntu-1804:     default: 22 (guest) => 2222 (host) (adapter 1)
+I, [2020-02-04T16:26:39.816861 #16952]  INFO -- default-ubuntu-1804: ==> default: Running 'pre-boot' VM customizations...
+I, [2020-02-04T16:26:39.924674 #16952]  INFO -- default-ubuntu-1804: ==> default: Booting VM...
+I, [2020-02-04T16:26:55.723503 #16952]  INFO -- default-ubuntu-1804: There was an error while executing `VBoxManage`, a CLI used by Vagrant
+I, [2020-02-04T16:26:55.723827 #16952]  INFO -- default-ubuntu-1804: for controlling VirtualBox. The command and stderr is shown below.
+I, [2020-02-04T16:26:55.724090 #16952]  INFO -- default-ubuntu-1804: 
+I, [2020-02-04T16:26:55.724353 #16952]  INFO -- default-ubuntu-1804: Command: ["startvm", "b376ee65-ef8b-451b-90cd-90e992c95c22", "--type", "headless"]
+I, [2020-02-04T16:26:55.724615 #16952]  INFO -- default-ubuntu-1804: 
+I, [2020-02-04T16:26:55.724963 #16952]  INFO -- default-ubuntu-1804: Stderr: VBoxManage.exe: error:  (VERR_NEM_MISSING_KERNEL_API).
+I, [2020-02-04T16:26:55.725236 #16952]  INFO -- default-ubuntu-1804: VBoxManage.exe: error: VT-x is not available (VERR_VMX_NO_VMX)
+I, [2020-02-04T16:26:55.725479 #16952]  INFO -- default-ubuntu-1804: VBoxManage.exe: error: Details: code E_FAIL (0x80004005), component ConsoleWrap, interface IConsole
+E, [2020-02-04T16:26:55.769958 #16952] ERROR -- default-ubuntu-1804: Create failed on instance <default-ubuntu-1804>.
+E, [2020-02-04T16:26:55.770379 #16952] ERROR -- default-ubuntu-1804: ------Exception-------
+E, [2020-02-04T16:26:55.770646 #16952] ERROR -- default-ubuntu-1804: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2020-02-04T16:26:55.770915 #16952] ERROR -- default-ubuntu-1804: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'bento/ubuntu-18.04'...
+[KProgress: 20%[KProgress: 40%[KProgress: 50%[K==> default: Matching MAC address for NAT networking...
+==> default: Checking if box 'bento/ubuntu-18.04' version '201912.14.0' is up to date...
+==> default: Setting the name of the VM: kitchen-mongod-replica-config-default-ubuntu-1804-674de062-3940-4656-9d8f-659270e5726a
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+STDERR: There was an error while executing `VBoxManage`, a CLI used by Vagrant
+for controlling VirtualBox. The command and stderr is shown below.
+
+Command: ["startvm", "b376ee65-ef8b-451b-90cd-90e992c95c22", "--type", "headless"]
+
+Stderr: VBoxManage.exe: error:  (VERR_NEM_MISSING_KERNEL_API).
+VBoxManage.exe: error: VT-x is not available (VERR_VMX_NO_VMX)
+VBoxManage.exe: error: Details: code E_FAIL (0x80004005), component ConsoleWrap, interface IConsole
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2020-02-04T16:26:55.771229 #16952] ERROR -- default-ubuntu-1804: ----------------------
+E, [2020-02-04T16:26:55.771579 #16952] ERROR -- default-ubuntu-1804: ------Backtrace-------
+E, [2020-02-04T16:26:55.771818 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2020-02-04T16:26:55.772056 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/shell_out.rb:58:in `run_command'
+E, [2020-02-04T16:26:55.772315 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/kitchen-vagrant-1.6.0/lib/kitchen/driver/vagrant.rb:460:in `run_command'
+E, [2020-02-04T16:26:55.772562 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/kitchen-vagrant-1.6.0/lib/kitchen/driver/vagrant.rb:407:in `run'
+E, [2020-02-04T16:26:55.772809 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/kitchen-vagrant-1.6.0/lib/kitchen/driver/vagrant.rb:491:in `run_vagrant_up'
+E, [2020-02-04T16:26:55.773029 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/kitchen-vagrant-1.6.0/lib/kitchen/driver/vagrant.rb:112:in `create'
+E, [2020-02-04T16:26:55.773277 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:485:in `public_send'
+E, [2020-02-04T16:26:55.773444 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:485:in `block in perform_action'
+E, [2020-02-04T16:26:55.773707 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:549:in `block in synchronize_or_call'
+E, [2020-02-04T16:26:55.774082 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:547:in `synchronize'
+E, [2020-02-04T16:26:55.774366 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:547:in `synchronize_or_call'
+E, [2020-02-04T16:26:55.774617 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:514:in `block in action'
+E, [2020-02-04T16:26:55.774814 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+E, [2020-02-04T16:26:55.775060 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:513:in `action'
+E, [2020-02-04T16:26:55.775315 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:485:in `perform_action'
+E, [2020-02-04T16:26:55.775670 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:394:in `create_action'
+E, [2020-02-04T16:26:55.775854 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2020-02-04T16:26:55.776021 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2020-02-04T16:26:55.776344 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2020-02-04T16:26:55.776608 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:380:in `each'
+E, [2020-02-04T16:26:55.776848 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2020-02-04T16:26:55.777082 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:162:in `verify'
+E, [2020-02-04T16:26:55.777346 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command.rb:198:in `public_send'
+E, [2020-02-04T16:26:55.777553 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command.rb:198:in `run_action_in_thread'
+E, [2020-02-04T16:26:55.777796 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2020-02-04T16:26:55.778062 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/logging-2.2.2/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2020-02-04T16:26:55.778409 #16952] ERROR -- default-ubuntu-1804: ----End Backtrace-----
+E, [2020-02-04T16:26:55.778663 #16952] ERROR -- default-ubuntu-1804: ---Nested Exception---
+E, [2020-02-04T16:26:55.778915 #16952] ERROR -- default-ubuntu-1804: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2020-02-04T16:26:55.779170 #16952] ERROR -- default-ubuntu-1804: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'bento/ubuntu-18.04'...
+[KProgress: 20%[KProgress: 40%[KProgress: 50%[K==> default: Matching MAC address for NAT networking...
+==> default: Checking if box 'bento/ubuntu-18.04' version '201912.14.0' is up to date...
+==> default: Setting the name of the VM: kitchen-mongod-replica-config-default-ubuntu-1804-674de062-3940-4656-9d8f-659270e5726a
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+STDERR: There was an error while executing `VBoxManage`, a CLI used by Vagrant
+for controlling VirtualBox. The command and stderr is shown below.
+
+Command: ["startvm", "b376ee65-ef8b-451b-90cd-90e992c95c22", "--type", "headless"]
+
+Stderr: VBoxManage.exe: error:  (VERR_NEM_MISSING_KERNEL_API).
+VBoxManage.exe: error: VT-x is not available (VERR_VMX_NO_VMX)
+VBoxManage.exe: error: Details: code E_FAIL (0x80004005), component ConsoleWrap, interface IConsole
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2020-02-04T16:26:55.779430 #16952] ERROR -- default-ubuntu-1804: ----------------------
+E, [2020-02-04T16:26:55.779668 #16952] ERROR -- default-ubuntu-1804: ------Backtrace-------
+E, [2020-02-04T16:26:55.779904 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/shell_out.rb:71:in `rescue in run_command'
+E, [2020-02-04T16:26:55.780145 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/shell_out.rb:58:in `run_command'
+E, [2020-02-04T16:26:55.780389 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/kitchen-vagrant-1.6.0/lib/kitchen/driver/vagrant.rb:460:in `run_command'
+E, [2020-02-04T16:26:55.780632 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/kitchen-vagrant-1.6.0/lib/kitchen/driver/vagrant.rb:407:in `run'
+E, [2020-02-04T16:26:55.780875 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/kitchen-vagrant-1.6.0/lib/kitchen/driver/vagrant.rb:491:in `run_vagrant_up'
+E, [2020-02-04T16:26:55.781126 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/kitchen-vagrant-1.6.0/lib/kitchen/driver/vagrant.rb:112:in `create'
+E, [2020-02-04T16:26:55.781348 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:485:in `public_send'
+E, [2020-02-04T16:26:55.781704 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:485:in `block in perform_action'
+E, [2020-02-04T16:26:55.781943 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:549:in `block in synchronize_or_call'
+E, [2020-02-04T16:26:55.782162 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:547:in `synchronize'
+E, [2020-02-04T16:26:55.782378 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:547:in `synchronize_or_call'
+E, [2020-02-04T16:26:55.782589 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:514:in `block in action'
+E, [2020-02-04T16:26:55.782815 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+E, [2020-02-04T16:26:55.783183 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:513:in `action'
+E, [2020-02-04T16:26:55.783412 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:485:in `perform_action'
+E, [2020-02-04T16:26:55.783639 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:394:in `create_action'
+E, [2020-02-04T16:26:55.783879 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2020-02-04T16:26:55.784114 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2020-02-04T16:26:55.784359 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2020-02-04T16:26:55.784591 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:380:in `each'
+E, [2020-02-04T16:26:55.784812 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2020-02-04T16:26:55.785031 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/instance.rb:162:in `verify'
+E, [2020-02-04T16:26:55.785261 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command.rb:198:in `public_send'
+E, [2020-02-04T16:26:55.785512 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command.rb:198:in `run_action_in_thread'
+E, [2020-02-04T16:26:55.785735 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/test-kitchen-2.3.4/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2020-02-04T16:26:55.786092 #16952] ERROR -- default-ubuntu-1804: C:/opscode/chefdk/embedded/lib/ruby/gems/2.6.0/gems/logging-2.2.2/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2020-02-04T16:26:55.786343 #16952] ERROR -- default-ubuntu-1804: ----End Backtrace-----

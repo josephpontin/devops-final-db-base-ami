@@ -1,6 +1,6 @@
 {
-  "revision_id": "7c2c6466af86499b30dbb8d0cd80404f74f55e5de87eae9cf1655ba07b766594",
-  "name": "mongodb_cookbook_v3.2.20",
+  "revision_id": "ac51ed1da1d370e6cf9a8f406a51440e9c719e52ac2771da9d9c718f80b94610",
+  "name": "mongod-replica-config",
   "run_list": [
     "recipe[mongod-replica-config::default]"
   ],
@@ -19,20 +19,31 @@
         "version": "7.2.0"
       }
     },
+    "filebeat": {
+      "version": "0.1.0",
+      "identifier": "1d7c4c48f64b2dbd16949eb4ffa0613f1c48dbff",
+      "dotted_decimal_identifier": "8299441408068397.53223598171946912.106923685370879",
+      "cache_key": "filebeat-33d354bc8185d4a042080be25bf9152fe360d075",
+      "origin": "https://github.com/Daniel-Chow-YC/filebeat-cookbook",
+      "source_options": {
+        "git": "https://github.com/Daniel-Chow-YC/filebeat-cookbook",
+        "revision": "33d354bc8185d4a042080be25bf9152fe360d075"
+      }
+    },
     "mongod-replica-config": {
       "version": "0.1.0",
-      "identifier": "fe2e1fdfb414fd99f7394df7914f5846f57d8f0f",
-      "dotted_decimal_identifier": "71545358516491517.43337496929997135.97061789601551",
+      "identifier": "8419869b0bb792e2dcd3c0812f3aade58e2a7026",
+      "dotted_decimal_identifier": "37182762843355026.63856146762510138.191201444261926",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": null,
-        "revision": "12e2c0d1828c255b707ede82fa8315b4b48853ca",
+        "revision": "0e0067895abbe01b38f5749ad1f41afc75c509de",
         "working_tree_clean": false,
-        "published": true,
+        "published": false,
         "synchronized_remote_branches": [
-          "origin/master"
+
         ]
       },
       "source_options": {
@@ -53,6 +64,10 @@
         "= 7.2.0"
       ],
       [
+        "filebeat",
+        ">= 0.0.0"
+      ],
+      [
         "mongod-replica-config",
         ">= 0.0.0"
       ]
@@ -60,6 +75,12 @@
     "dependencies": {
       "apt (7.2.0)": [
 
+      ],
+      "filebeat (0.1.0)": [
+        [
+          "apt",
+          ">= 0.0.0"
+        ]
       ],
       "mongod-replica-config (0.1.0)": [
         [

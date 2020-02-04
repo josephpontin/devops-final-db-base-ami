@@ -4,7 +4,7 @@
 # https://docs.chef.io/policyfile.html
 
 # A name that describes what the system you're building with Chef does.
-name 'mongodb_cookbook_v3.2.20'
+name 'mongod-replica-config'
 
 # Where to find external cookbooks:
 default_source :supermarket
@@ -14,3 +14,5 @@ run_list 'mongod-replica-config::default'
 
 # Specify a custom source for a single cookbook:
 cookbook 'mongod-replica-config', path: '.'
+
+cookbook 'filebeat', git: 'https://github.com/Daniel-Chow-YC/filebeat-cookbook'

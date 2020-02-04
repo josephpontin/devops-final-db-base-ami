@@ -3,7 +3,13 @@
 # Recipe:: default
 #
 # Copyright:: 2020, The Authors, All Rights Reserved.
+site_name = node['github']['repo']
+
+include_recipe site_name
+
 include_recipe 'apt'
+
+
 
 
 # Installing mongodb
@@ -38,10 +44,10 @@ template '/lib/systemd/system/mongod.service' do
   notifies :run, 'execute[restart_mongod.service]', :immediately
 end
 
-template '/etc/hosts' do
-  source 'hosts.erb'
-  notifies :run, 'execute[restart_mongod.service]', :immediately
-end
+# template '/etc/hosts' do
+#   source 'hosts.erb'
+#   notifies :run, 'execute[restart_mongod.service]', :immediately
+# end
 
 directory '/opt/mongo' do
   recursive true
@@ -57,6 +63,10 @@ template '/opt/mongo/mongo-keyfile' do
   notifies :run, 'execute[restart_mongod.service]', :immediately
 end
 
+# template '/etc/cloud/cloud.cfg' do
+#   source 'cloud.cfg.erb'
+# end
+
 bash 'chown keyfile' do
   user 'root'
   code <<-EOH
@@ -69,3 +79,5 @@ template '/etc/mongod.conf' do
   variables bind_ip: node['mongod']['bind_ip'], port: node['mongod']['port']
   notifies :run, 'execute[restart_mongod]', :immediately
 end
+
+include_recipe 'https://github.com/Daniel-Chow-YC/filebeat-cookbook'
