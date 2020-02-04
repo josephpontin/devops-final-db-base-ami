@@ -1,0 +1,63 @@
+{
+  "revision_id": "92b27fa4f0c0ef0435bc11b6131119bb702692c397b0683155061da4ae858da8",
+  "name": "mongodb_cookbook_v3.2.20",
+  "run_list": [
+    "recipe[mongod-replica-config::default]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "apt": {
+      "version": "7.2.0",
+      "identifier": "42f46ee8ced265bcc92c3bf40c9f7ceb3c443df1",
+      "dotted_decimal_identifier": "18846105652351589.53138487443197087.137349770264049",
+      "cache_key": "apt-7.2.0-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/7.2.0/download",
+      "source_options": {
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/apt/versions/7.2.0/download",
+        "version": "7.2.0"
+      }
+    },
+    "mongod-replica-config": {
+      "version": "0.1.0",
+      "identifier": "ee80e14a9c3e0ff1b1ea9a8a5973e990d18f0f6a",
+      "dotted_decimal_identifier": "67132749564886543.68031090560489843.256808200376170",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": null,
+      "source_options": {
+        "path": "."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "apt",
+        "= 7.2.0"
+      ],
+      [
+        "mongod-replica-config",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "apt (7.2.0)": [
+
+      ],
+      "mongod-replica-config (0.1.0)": [
+        [
+          "apt",
+          ">= 0.0.0"
+        ]
+      ]
+    }
+  }
+}

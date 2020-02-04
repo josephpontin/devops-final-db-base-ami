@@ -1,0 +1,13 @@
+I, [2020-02-03T16:29:32.924361 #7156]  INFO -- default-ubuntu-1604: -----> Destroying <default-ubuntu-1604>...
+I, [2020-02-03T16:29:33.141353 #7156]  INFO -- default-ubuntu-1604: Waited 0/300s for instance <i-0bf3b8e21cb75741f> to terminate.
+I, [2020-02-03T16:29:38.242739 #7156]  INFO -- default-ubuntu-1604: Waited 5/300s for instance <i-0bf3b8e21cb75741f> to terminate.
+I, [2020-02-03T16:29:43.533386 #7156]  INFO -- default-ubuntu-1604: Waited 10/300s for instance <i-0bf3b8e21cb75741f> to terminate.
+I, [2020-02-03T16:29:48.676089 #7156]  INFO -- default-ubuntu-1604: Waited 15/300s for instance <i-0bf3b8e21cb75741f> to terminate.
+I, [2020-02-03T16:29:53.795616 #7156]  INFO -- default-ubuntu-1604: Waited 20/300s for instance <i-0bf3b8e21cb75741f> to terminate.
+I, [2020-02-03T16:29:59.072293 #7156]  INFO -- default-ubuntu-1604: Waited 25/300s for instance <i-0bf3b8e21cb75741f> to terminate.
+I, [2020-02-03T16:30:04.204644 #7156]  INFO -- default-ubuntu-1604: Waited 30/300s for instance <i-0bf3b8e21cb75741f> to terminate.
+I, [2020-02-03T16:30:09.376666 #7156]  INFO -- default-ubuntu-1604: Waited 35/300s for instance <i-0bf3b8e21cb75741f> to terminate.
+I, [2020-02-03T16:30:14.522284 #7156]  INFO -- default-ubuntu-1604: Waited 40/300s for instance <i-0bf3b8e21cb75741f> to terminate.
+I, [2020-02-03T16:30:14.657527 #7156]  INFO -- default-ubuntu-1604: EC2 instance <i-0bf3b8e21cb75741f> destroyed.
+I, [2020-02-03T16:30:14.657745 #7156]  INFO -- default-ubuntu-1604: Removing automatic security group sg-05a74a154ca496be2
+I, [2020-02-03T16:30:14.880790 #7156]  INFO -- default-ubuntu-1604: Finished destroying <default-ubuntu-1604> (0m41.95s).
