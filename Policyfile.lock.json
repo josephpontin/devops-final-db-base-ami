@@ -1,5 +1,5 @@
 {
-  "revision_id": "92b27fa4f0c0ef0435bc11b6131119bb702692c397b0683155061da4ae858da8",
+  "revision_id": "7c2c6466af86499b30dbb8d0cd80404f74f55e5de87eae9cf1655ba07b766594",
   "name": "mongodb_cookbook_v3.2.20",
   "run_list": [
     "recipe[mongod-replica-config::default]"
@@ -21,11 +21,20 @@
     },
     "mongod-replica-config": {
       "version": "0.1.0",
-      "identifier": "ee80e14a9c3e0ff1b1ea9a8a5973e990d18f0f6a",
-      "dotted_decimal_identifier": "67132749564886543.68031090560489843.256808200376170",
+      "identifier": "fe2e1fdfb414fd99f7394df7914f5846f57d8f0f",
+      "dotted_decimal_identifier": "71545358516491517.43337496929997135.97061789601551",
       "source": ".",
       "cache_key": null,
-      "scm_info": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "12e2c0d1828c255b707ede82fa8315b4b48853ca",
+        "working_tree_clean": false,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/master"
+        ]
+      },
       "source_options": {
         "path": "."
       }

@@ -1,13 +1,299 @@
-I, [2020-02-03T16:29:32.924361 #7156]  INFO -- default-ubuntu-1604: -----> Destroying <default-ubuntu-1604>...
-I, [2020-02-03T16:29:33.141353 #7156]  INFO -- default-ubuntu-1604: Waited 0/300s for instance <i-0bf3b8e21cb75741f> to terminate.
-I, [2020-02-03T16:29:38.242739 #7156]  INFO -- default-ubuntu-1604: Waited 5/300s for instance <i-0bf3b8e21cb75741f> to terminate.
-I, [2020-02-03T16:29:43.533386 #7156]  INFO -- default-ubuntu-1604: Waited 10/300s for instance <i-0bf3b8e21cb75741f> to terminate.
-I, [2020-02-03T16:29:48.676089 #7156]  INFO -- default-ubuntu-1604: Waited 15/300s for instance <i-0bf3b8e21cb75741f> to terminate.
-I, [2020-02-03T16:29:53.795616 #7156]  INFO -- default-ubuntu-1604: Waited 20/300s for instance <i-0bf3b8e21cb75741f> to terminate.
-I, [2020-02-03T16:29:59.072293 #7156]  INFO -- default-ubuntu-1604: Waited 25/300s for instance <i-0bf3b8e21cb75741f> to terminate.
-I, [2020-02-03T16:30:04.204644 #7156]  INFO -- default-ubuntu-1604: Waited 30/300s for instance <i-0bf3b8e21cb75741f> to terminate.
-I, [2020-02-03T16:30:09.376666 #7156]  INFO -- default-ubuntu-1604: Waited 35/300s for instance <i-0bf3b8e21cb75741f> to terminate.
-I, [2020-02-03T16:30:14.522284 #7156]  INFO -- default-ubuntu-1604: Waited 40/300s for instance <i-0bf3b8e21cb75741f> to terminate.
-I, [2020-02-03T16:30:14.657527 #7156]  INFO -- default-ubuntu-1604: EC2 instance <i-0bf3b8e21cb75741f> destroyed.
-I, [2020-02-03T16:30:14.657745 #7156]  INFO -- default-ubuntu-1604: Removing automatic security group sg-05a74a154ca496be2
-I, [2020-02-03T16:30:14.880790 #7156]  INFO -- default-ubuntu-1604: Finished destroying <default-ubuntu-1604> (0m41.95s).
+I, [2020-02-04T10:32:43.410745 #14952]  INFO -- default-ubuntu-1604: -----> Creating <default-ubuntu-1604>...
+I, [2020-02-04T10:32:45.203363 #14952]  INFO -- default-ubuntu-1604: Detected platform: ubuntu version 16.04 on x86_64. Instance Type: t2.micro. Default username: ubuntu (default).
+I, [2020-02-04T10:32:45.203655 #14952]  INFO -- default-ubuntu-1604: If you are not using an account that qualifies under the AWS
+free-tier, you may be charged to run these suites. The charge
+should be minimal, but neither Test Kitchen nor its maintainers
+are responsible for your incurred costs.
+
+I, [2020-02-04T10:32:45.528276 #14952]  INFO -- default-ubuntu-1604: Created automatic security group sg-00b24603a6a1b0416
+I, [2020-02-04T10:32:46.815129 #14952]  INFO -- default-ubuntu-1604: Instance <i-0e12faedf48afb161> requested.
+I, [2020-02-04T10:32:46.815416 #14952]  INFO -- default-ubuntu-1604: Polling AWS for existence, attempt 0...
+I, [2020-02-04T10:32:46.914349 #14952]  INFO -- default-ubuntu-1604: Attempting to tag the instance, 0 retries
+I, [2020-02-04T10:32:47.236939 #14952]  INFO -- default-ubuntu-1604: EC2 instance <i-0e12faedf48afb161> created.
+I, [2020-02-04T10:32:47.237224 #14952]  INFO -- default-ubuntu-1604: Waited 0/300s for instance <i-0e12faedf48afb161> volumes to be ready.
+I, [2020-02-04T10:32:52.532393 #14952]  INFO -- default-ubuntu-1604: Waited 5/300s for instance <i-0e12faedf48afb161> volumes to be ready.
+I, [2020-02-04T10:32:53.255895 #14952]  INFO -- default-ubuntu-1604: Waited 0/300s for instance <i-0e12faedf48afb161> to become ready.
+I, [2020-02-04T10:32:58.421563 #14952]  INFO -- default-ubuntu-1604: Waited 5/300s for instance <i-0e12faedf48afb161> to become ready.
+I, [2020-02-04T10:33:03.678199 #14952]  INFO -- default-ubuntu-1604: Waited 10/300s for instance <i-0e12faedf48afb161> to become ready.
+I, [2020-02-04T10:33:08.929306 #14952]  INFO -- default-ubuntu-1604: Waited 15/300s for instance <i-0e12faedf48afb161> to become ready.
+I, [2020-02-04T10:33:14.492643 #14952]  INFO -- default-ubuntu-1604: Waited 20/300s for instance <i-0e12faedf48afb161> to become ready.
+I, [2020-02-04T10:33:21.744393 #14952]  INFO -- default-ubuntu-1604: Waited 25/300s for instance <i-0e12faedf48afb161> to become ready.
+I, [2020-02-04T10:33:22.528973 #14952]  INFO -- default-ubuntu-1604: EC2 instance <i-0e12faedf48afb161> ready (hostname: ec2-34-254-253-127.eu-west-1.compute.amazonaws.com).
+I, [2020-02-04T10:33:25.694277 #14952]  INFO -- default-ubuntu-1604: [SSH] Established
+I, [2020-02-04T10:33:25.696048 #14952]  INFO -- default-ubuntu-1604: Finished creating <default-ubuntu-1604> (0m42.28s).
+I, [2020-02-04T10:33:25.696443 #14952]  INFO -- default-ubuntu-1604: -----> Converging <default-ubuntu-1604>...
+I, [2020-02-04T10:33:25.704457 #14952]  INFO -- default-ubuntu-1604: Preparing files for transfer
+I, [2020-02-04T10:33:25.705119 #14952]  INFO -- default-ubuntu-1604: Installing cookbooks for Policyfile C:/opscode/mongod-replica-config/Policyfile.rb using `chef install`
+I, [2020-02-04T10:33:30.808491 #14952]  INFO -- default-ubuntu-1604: Installing cookbooks from lock
+I, [2020-02-04T10:33:30.819599 #14952]  INFO -- default-ubuntu-1604: Using      apt                   7.2.0
+I, [2020-02-04T10:33:30.819848 #14952]  INFO -- default-ubuntu-1604: Installing mongod-replica-config 0.1.0
+I, [2020-02-04T10:33:30.831102 #14952]  INFO -- default-ubuntu-1604: Preparing dna.json
+I, [2020-02-04T10:33:30.832841 #14952]  INFO -- default-ubuntu-1604: Exporting cookbook dependencies from Policyfile C:/Users/JOSEPH~1/AppData/Local/Temp/default-ubuntu-1604-sandbox-20200204-14952-1dz6h1...
+I, [2020-02-04T10:33:36.825635 #14952]  INFO -- default-ubuntu-1604: Exported policy 'mongodb_cookbook_v3.2.20' to C:/Users/JOSEPH~1/AppData/Local/Temp/default-ubuntu-1604-sandbox-20200204-14952-1dz6h1
+I, [2020-02-04T10:33:36.825819 #14952]  INFO -- default-ubuntu-1604: 
+I, [2020-02-04T10:33:36.825967 #14952]  INFO -- default-ubuntu-1604: To converge this system with the exported policy, run:
+I, [2020-02-04T10:33:36.826135 #14952]  INFO -- default-ubuntu-1604:   cd C:/Users/JOSEPH~1/AppData/Local/Temp/default-ubuntu-1604-sandbox-20200204-14952-1dz6h1
+I, [2020-02-04T10:33:36.826349 #14952]  INFO -- default-ubuntu-1604:   chef-client -z
+I, [2020-02-04T10:33:36.837930 #14952]  INFO -- default-ubuntu-1604: Removing non-cookbook files before transfer
+I, [2020-02-04T10:33:36.838970 #14952]  INFO -- default-ubuntu-1604: Preparing validation.pem
+I, [2020-02-04T10:33:36.842401 #14952]  INFO -- default-ubuntu-1604: Preparing client.rb
+I, [2020-02-04T10:33:36.942378 #14952]  INFO -- default-ubuntu-1604: -----> Installing Chef install only if missing package
+I, [2020-02-04T10:33:36.942811 #14952]  INFO -- default-ubuntu-1604: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2020-02-04T10:33:36.943218 #14952]  INFO -- default-ubuntu-1604: Trying wget...
+I, [2020-02-04T10:33:36.964823 #14952]  INFO -- default-ubuntu-1604: Download complete.
+I, [2020-02-04T10:33:36.986974 #14952]  INFO -- default-ubuntu-1604: ubuntu 16.04 x86_64
+I, [2020-02-04T10:33:36.987393 #14952]  INFO -- default-ubuntu-1604: Getting information for chef stable  for ubuntu...
+I, [2020-02-04T10:33:36.987887 #14952]  INFO -- default-ubuntu-1604: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=16.04&m=x86_64
+I, [2020-02-04T10:33:36.988196 #14952]  INFO -- default-ubuntu-1604:   to file /tmp/install.sh.1901/metadata.txt
+I, [2020-02-04T10:33:36.988501 #14952]  INFO -- default-ubuntu-1604: trying wget...
+I, [2020-02-04T10:33:37.725816 #14952]  INFO -- default-ubuntu-1604: sha1	5cbde23fa9376cc16dd52a94d691b469f3522f09
+I, [2020-02-04T10:33:37.726251 #14952]  INFO -- default-ubuntu-1604: sha256	236c797dfa13554a8abfa1a4b69a13264f86f287faedc61ae485e947f13fcc13
+I, [2020-02-04T10:33:37.726654 #14952]  INFO -- default-ubuntu-1604: url	https://packages.chef.io/files/stable/chef/15.7.32/ubuntu/16.04/chef_15.7.32-1_amd64.deb
+I, [2020-02-04T10:33:37.727050 #14952]  INFO -- default-ubuntu-1604: version	15.7.32
+I, [2020-02-04T10:33:37.727385 #14952]  INFO -- default-ubuntu-1604: downloaded metadata file looks valid...
+I, [2020-02-04T10:33:37.738531 #14952]  INFO -- default-ubuntu-1604: downloading https://packages.chef.io/files/stable/chef/15.7.32/ubuntu/16.04/chef_15.7.32-1_amd64.deb
+I, [2020-02-04T10:33:37.738927 #14952]  INFO -- default-ubuntu-1604:   to file /tmp/install.sh.1901/chef_15.7.32-1_amd64.deb
+I, [2020-02-04T10:33:37.739296 #14952]  INFO -- default-ubuntu-1604: trying wget...
+I, [2020-02-04T10:33:37.960655 #14952]  INFO -- default-ubuntu-1604: Comparing checksum with sha256sum...
+I, [2020-02-04T10:33:38.172143 #14952]  INFO -- default-ubuntu-1604: 
+I, [2020-02-04T10:33:38.172462 #14952]  INFO -- default-ubuntu-1604: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2020-02-04T10:33:38.172672 #14952]  INFO -- default-ubuntu-1604: 
+I, [2020-02-04T10:33:38.172975 #14952]  INFO -- default-ubuntu-1604: You are installing a package without a version pin.  If you are installing
+I, [2020-02-04T10:33:38.173135 #14952]  INFO -- default-ubuntu-1604: on production servers via an automated process this is DANGEROUS and you will
+I, [2020-02-04T10:33:38.173276 #14952]  INFO -- default-ubuntu-1604: be upgraded without warning on new releases, even to new major releases.
+I, [2020-02-04T10:33:38.173414 #14952]  INFO -- default-ubuntu-1604: Letting the version float is only appropriate in desktop, test, development or
+I, [2020-02-04T10:33:38.173697 #14952]  INFO -- default-ubuntu-1604: CI/CD environments.
+I, [2020-02-04T10:33:38.173885 #14952]  INFO -- default-ubuntu-1604: 
+I, [2020-02-04T10:33:38.174204 #14952]  INFO -- default-ubuntu-1604: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2020-02-04T10:33:38.174383 #14952]  INFO -- default-ubuntu-1604: 
+I, [2020-02-04T10:33:38.174665 #14952]  INFO -- default-ubuntu-1604: Installing chef 
+I, [2020-02-04T10:33:38.174967 #14952]  INFO -- default-ubuntu-1604: installing with dpkg...
+I, [2020-02-04T10:33:38.218882 #14952]  INFO -- default-ubuntu-1604: Selecting previously unselected package chef.
+I, [2020-02-04T10:33:38.359249 #14952]  INFO -- default-ubuntu-1604: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51398 files and directories currently installed.)
+I, [2020-02-04T10:33:38.359646 #14952]  INFO -- default-ubuntu-1604: Preparing to unpack .../chef_15.7.32-1_amd64.deb ...
+I, [2020-02-04T10:33:38.371590 #14952]  INFO -- default-ubuntu-1604: Unpacking chef (15.7.32-1) ...
+I, [2020-02-04T10:33:43.155531 #14952]  INFO -- default-ubuntu-1604: Setting up chef (15.7.32-1) ...
+I, [2020-02-04T10:33:43.232217 #14952]  INFO -- default-ubuntu-1604: Thank you for installing Chef Infra Client! For help getting started visit https://learn.chef.io
+I, [2020-02-04T10:33:43.387564 #14952]  INFO -- default-ubuntu-1604: Transferring files to <default-ubuntu-1604>
+I, [2020-02-04T10:33:52.868299 #14952]  INFO -- default-ubuntu-1604: +---------------------------------------------+
+I, [2020-02-04T10:33:52.868819 #14952]  INFO -- default-ubuntu-1604: [32m✔[0m 2 product licenses accepted.
+I, [2020-02-04T10:33:52.869086 #14952]  INFO -- default-ubuntu-1604: +---------------------------------------------+
+I, [2020-02-04T10:33:52.996102 #14952]  INFO -- default-ubuntu-1604: Starting Chef Infra Client, version 15.7.32
+I, [2020-02-04T10:33:54.136691 #14952]  INFO -- default-ubuntu-1604: Creating a new client identity for default-ubuntu-1604 using the validator key.
+I, [2020-02-04T10:33:54.224558 #14952]  INFO -- default-ubuntu-1604: Using policy 'mongodb_cookbook_v3.2.20' at revision '7c2c6466af86499b30dbb8d0cd80404f74f55e5de87eae9cf1655ba07b766594'
+I, [2020-02-04T10:33:54.235493 #14952]  INFO -- default-ubuntu-1604: resolving cookbooks for run list: ["mongod-replica-config::default@0.1.0 (fe2e1fd)"]
+I, [2020-02-04T10:33:54.289924 #14952]  INFO -- default-ubuntu-1604: Synchronizing Cookbooks:
+I, [2020-02-04T10:33:54.354875 #14952]  INFO -- default-ubuntu-1604:   - apt (7.2.0)
+I, [2020-02-04T10:33:54.388217 #14952]  INFO -- default-ubuntu-1604:   - mongod-replica-config (0.1.0)
+I, [2020-02-04T10:33:54.388595 #14952]  INFO -- default-ubuntu-1604: Installing Cookbook Gems:
+I, [2020-02-04T10:33:54.399623 #14952]  INFO -- default-ubuntu-1604: Compiling Cookbooks...
+I, [2020-02-04T10:33:54.410811 #14952]  INFO -- default-ubuntu-1604: Converging 18 resources
+I, [2020-02-04T10:33:54.411277 #14952]  INFO -- default-ubuntu-1604: Recipe: apt::default
+I, [2020-02-04T10:33:54.411628 #14952]  INFO -- default-ubuntu-1604:   * file[/var/lib/apt/periodic/update-success-stamp] action nothing (skipped due to action :nothing)
+I, [2020-02-04T10:33:54.412015 #14952]  INFO -- default-ubuntu-1604:   * apt_update[periodic] action periodic
+I, [2020-02-04T10:33:54.422977 #14952]  INFO -- default-ubuntu-1604:     - update new lists of packages
+I, [2020-02-04T10:33:54.423387 #14952]  INFO -- default-ubuntu-1604:     * directory[/var/lib/apt/periodic] action create (up to date)
+I, [2020-02-04T10:33:54.423739 #14952]  INFO -- default-ubuntu-1604:     * directory[/etc/apt/apt.conf.d] action create (up to date)
+I, [2020-02-04T10:33:54.424185 #14952]  INFO -- default-ubuntu-1604:     * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing (up to date)
+I, [2020-02-04T10:34:00.796270 #14952]  INFO -- default-ubuntu-1604:     * execute[apt-get -q update] action run
+I, [2020-02-04T10:34:00.796631 #14952]  INFO -- default-ubuntu-1604:       - execute ["apt-get", "-q", "update"]
+I, [2020-02-04T10:34:00.796900 #14952]  INFO -- default-ubuntu-1604:   
+I, [2020-02-04T10:34:00.797359 #14952]  INFO -- default-ubuntu-1604:   * execute[apt-get update] action nothing (skipped due to action :nothing)
+I, [2020-02-04T10:34:00.818708 #14952]  INFO -- default-ubuntu-1604:   * execute[apt-get autoremove] action nothing (skipped due to action :nothing)
+I, [2020-02-04T10:34:00.819146 #14952]  INFO -- default-ubuntu-1604:   * execute[apt-get autoclean] action nothing (skipped due to action :nothing)
+I, [2020-02-04T10:34:00.819388 #14952]  INFO -- default-ubuntu-1604:   * directory[/var/cache/local] action create
+I, [2020-02-04T10:34:00.831013 #14952]  INFO -- default-ubuntu-1604:     - create new directory /var/cache/local
+I, [2020-02-04T10:34:00.831713 #14952]  INFO -- default-ubuntu-1604:     - change mode from '' to '0755'
+I, [2020-02-04T10:34:00.832280 #14952]  INFO -- default-ubuntu-1604:     - change owner from '' to 'root'
+I, [2020-02-04T10:34:00.832540 #14952]  INFO -- default-ubuntu-1604:     - change group from '' to 'root'
+I, [2020-02-04T10:34:00.832885 #14952]  INFO -- default-ubuntu-1604:   * directory[/var/cache/local/preseeding] action create
+I, [2020-02-04T10:34:00.833462 #14952]  INFO -- default-ubuntu-1604:     - create new directory /var/cache/local/preseeding
+I, [2020-02-04T10:34:00.833887 #14952]  INFO -- default-ubuntu-1604:     - change mode from '' to '0755'
+I, [2020-02-04T10:34:00.834247 #14952]  INFO -- default-ubuntu-1604:     - change owner from '' to 'root'
+I, [2020-02-04T10:34:00.834505 #14952]  INFO -- default-ubuntu-1604:     - change group from '' to 'root'
+I, [2020-02-04T10:34:00.834989 #14952]  INFO -- default-ubuntu-1604:   * template[/etc/apt/apt.conf.d/10dpkg-options] action create
+I, [2020-02-04T10:34:00.835713 #14952]  INFO -- default-ubuntu-1604:     - create new file /etc/apt/apt.conf.d/10dpkg-options
+I, [2020-02-04T10:34:00.836076 #14952]  INFO -- default-ubuntu-1604:     - update content in file /etc/apt/apt.conf.d/10dpkg-options from none to c918ac
+I, [2020-02-04T10:34:00.836494 #14952]  INFO -- default-ubuntu-1604:     --- /etc/apt/apt.conf.d/10dpkg-options	2020-02-04 10:34:00.771511152 +0000
+I, [2020-02-04T10:34:00.836966 #14952]  INFO -- default-ubuntu-1604:     +++ /etc/apt/apt.conf.d/.chef-10dpkg-options20200204-1988-yzv1kv	2020-02-04 10:34:00.771511152 +0000
+I, [2020-02-04T10:34:00.837454 #14952]  INFO -- default-ubuntu-1604:     @@ -1 +1,4 @@
+I, [2020-02-04T10:34:00.837830 #14952]  INFO -- default-ubuntu-1604:     +# Managed by Chef
+I, [2020-02-04T10:34:00.838227 #14952]  INFO -- default-ubuntu-1604:     +DPkg::Options {
+I, [2020-02-04T10:34:00.838699 #14952]  INFO -- default-ubuntu-1604:     +}
+I, [2020-02-04T10:34:00.839068 #14952]  INFO -- default-ubuntu-1604:     - change mode from '' to '0644'
+I, [2020-02-04T10:34:00.839545 #14952]  INFO -- default-ubuntu-1604:     - change owner from '' to 'root'
+I, [2020-02-04T10:34:00.839968 #14952]  INFO -- default-ubuntu-1604:     - change group from '' to 'root'
+I, [2020-02-04T10:34:00.840415 #14952]  INFO -- default-ubuntu-1604:   * template[/etc/apt/apt.conf.d/10recommends] action create
+I, [2020-02-04T10:34:00.840938 #14952]  INFO -- default-ubuntu-1604:     - create new file /etc/apt/apt.conf.d/10recommends
+I, [2020-02-04T10:34:00.841280 #14952]  INFO -- default-ubuntu-1604:     - update content in file /etc/apt/apt.conf.d/10recommends from none to f41e1d
+I, [2020-02-04T10:34:00.841994 #14952]  INFO -- default-ubuntu-1604:     --- /etc/apt/apt.conf.d/10recommends	2020-02-04 10:34:00.779545208 +0000
+I, [2020-02-04T10:34:00.842528 #14952]  INFO -- default-ubuntu-1604:     +++ /etc/apt/apt.conf.d/.chef-10recommends20200204-1988-1gs5xzx	2020-02-04 10:34:00.779545208 +0000
+I, [2020-02-04T10:34:00.842955 #14952]  INFO -- default-ubuntu-1604:     @@ -1 +1,4 @@
+I, [2020-02-04T10:34:00.843297 #14952]  INFO -- default-ubuntu-1604:     +# Managed by Chef
+I, [2020-02-04T10:34:00.843699 #14952]  INFO -- default-ubuntu-1604:     +APT::Install-Recommends "1";
+I, [2020-02-04T10:34:00.844019 #14952]  INFO -- default-ubuntu-1604:     +APT::Install-Suggests "0";
+I, [2020-02-04T10:34:00.844401 #14952]  INFO -- default-ubuntu-1604:     - change mode from '' to '0644'
+I, [2020-02-04T10:34:00.844722 #14952]  INFO -- default-ubuntu-1604:     - change owner from '' to 'root'
+I, [2020-02-04T10:34:00.845085 #14952]  INFO -- default-ubuntu-1604:     - change group from '' to 'root'
+I, [2020-02-04T10:34:03.672915 #14952]  INFO -- default-ubuntu-1604:   * apt_package[apt-transport-https, gnupg, dirmngr] action install
+I, [2020-02-04T10:34:03.673490 #14952]  INFO -- default-ubuntu-1604:     - install version 2.1.11-6ubuntu2.1 of package dirmngr
+I, [2020-02-04T10:34:03.673822 #14952]  INFO -- default-ubuntu-1604: Recipe: mongod-replica-config::default
+I, [2020-02-04T10:34:16.690619 #14952]  INFO -- default-ubuntu-1604:   * bash[install_mongod] action run
+I, [2020-02-04T10:34:16.701538 #14952]  INFO -- default-ubuntu-1604:     - execute "bash"  "/tmp/chef-script20200204-1988-1voqe3i"
+I, [2020-02-04T10:34:16.701773 #14952]  INFO -- default-ubuntu-1604:   * execute[restart_mongod] action nothing (skipped due to action :nothing)
+I, [2020-02-04T10:34:16.701998 #14952]  INFO -- default-ubuntu-1604:   * execute[restart_mongod.service] action nothing (skipped due to action :nothing)
+I, [2020-02-04T10:34:16.733336 #14952]  INFO -- default-ubuntu-1604:   * template[/lib/systemd/system/mongod.service] action create
+I, [2020-02-04T10:34:16.733542 #14952]  INFO -- default-ubuntu-1604:     - update content in file /lib/systemd/system/mongod.service from 0bb32f to 1f07a7
+I, [2020-02-04T10:34:16.733698 #14952]  INFO -- default-ubuntu-1604:     --- /lib/systemd/system/mongod.service	2018-04-25 22:02:35.000000000 +0000
+I, [2020-02-04T10:34:16.733870 #14952]  INFO -- default-ubuntu-1604:     +++ /lib/systemd/system/.chef-mongod20200204-1988-e5ip3p.service	2020-02-04 10:34:16.686553314 +0000
+I, [2020-02-04T10:34:16.733959 #14952]  INFO -- default-ubuntu-1604:     @@ -3,28 +3,14 @@
+I, [2020-02-04T10:34:16.734178 #14952]  INFO -- default-ubuntu-1604:      After=network.target
+I, [2020-02-04T10:34:16.734351 #14952]  INFO -- default-ubuntu-1604:      Documentation=https://docs.mongodb.org/manual
+I, [2020-02-04T10:34:16.734512 #14952]  INFO -- default-ubuntu-1604:      
+I, [2020-02-04T10:34:16.734668 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:16.734826 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:16.734980 #14952]  INFO -- default-ubuntu-1604:      [Service]
+I, [2020-02-04T10:34:16.735135 #14952]  INFO -- default-ubuntu-1604:      User=mongodb
+I, [2020-02-04T10:34:16.735288 #14952]  INFO -- default-ubuntu-1604:      Group=mongodb
+I, [2020-02-04T10:34:16.735436 #14952]  INFO -- default-ubuntu-1604:      ExecStart=/usr/bin/mongod --quiet --config /etc/mongod.conf
+I, [2020-02-04T10:34:16.735602 #14952]  INFO -- default-ubuntu-1604:     -# file size
+I, [2020-02-04T10:34:16.735738 #14952]  INFO -- default-ubuntu-1604:     -LimitFSIZE=infinity
+I, [2020-02-04T10:34:16.735877 #14952]  INFO -- default-ubuntu-1604:     -# cpu time
+I, [2020-02-04T10:34:16.736016 #14952]  INFO -- default-ubuntu-1604:     -LimitCPU=infinity
+I, [2020-02-04T10:34:16.736150 #14952]  INFO -- default-ubuntu-1604:     -# virtual memory size
+I, [2020-02-04T10:34:16.736278 #14952]  INFO -- default-ubuntu-1604:     -LimitAS=infinity
+I, [2020-02-04T10:34:16.736393 #14952]  INFO -- default-ubuntu-1604:     -# open files
+I, [2020-02-04T10:34:16.736467 #14952]  INFO -- default-ubuntu-1604:     -LimitNOFILE=64000
+I, [2020-02-04T10:34:16.736691 #14952]  INFO -- default-ubuntu-1604:     -# processes/threads
+I, [2020-02-04T10:34:16.736851 #14952]  INFO -- default-ubuntu-1604:     -LimitNPROC=64000
+I, [2020-02-04T10:34:16.736971 #14952]  INFO -- default-ubuntu-1604:     -# locked memory
+I, [2020-02-04T10:34:16.737022 #14952]  INFO -- default-ubuntu-1604:     -LimitMEMLOCK=infinity
+I, [2020-02-04T10:34:16.737069 #14952]  INFO -- default-ubuntu-1604:     -# total threads (user+kernel)
+I, [2020-02-04T10:34:16.737114 #14952]  INFO -- default-ubuntu-1604:     -TasksMax=infinity
+I, [2020-02-04T10:34:16.737159 #14952]  INFO -- default-ubuntu-1604:     -TasksAccounting=false
+I, [2020-02-04T10:34:16.737208 #14952]  INFO -- default-ubuntu-1604:      
+I, [2020-02-04T10:34:16.737256 #14952]  INFO -- default-ubuntu-1604:     -# Recommended limits for for mongod as specified in
+I, [2020-02-04T10:34:16.737341 #14952]  INFO -- default-ubuntu-1604:     -# http://docs.mongodb.org/manual/reference/ulimit/#recommended-settings
+I, [2020-02-04T10:34:16.737391 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:16.737438 #14952]  INFO -- default-ubuntu-1604:      
+I, [2020-02-04T10:34:16.737488 #14952]  INFO -- default-ubuntu-1604:      [Install]
+I, [2020-02-04T10:34:16.737539 #14952]  INFO -- default-ubuntu-1604:      WantedBy=multi-user.target
+I, [2020-02-04T10:34:16.835537 #14952]  INFO -- default-ubuntu-1604:   * execute[restart_mongod.service] action run
+I, [2020-02-04T10:34:16.835724 #14952]  INFO -- default-ubuntu-1604:     - execute sudo systemctl enable mongod.service
+I, [2020-02-04T10:34:16.836038 #14952]  INFO -- default-ubuntu-1604:   * directory[/opt/mongo] action create
+I, [2020-02-04T10:34:16.836385 #14952]  INFO -- default-ubuntu-1604:     - create new directory /opt/mongo
+I, [2020-02-04T10:34:16.836670 #14952]  INFO -- default-ubuntu-1604:     - change mode from '' to '0755'
+I, [2020-02-04T10:34:16.836901 #14952]  INFO -- default-ubuntu-1604:     - change owner from '' to 'root'
+I, [2020-02-04T10:34:16.837245 #14952]  INFO -- default-ubuntu-1604:     - change group from '' to 'root'
+I, [2020-02-04T10:34:16.859039 #14952]  INFO -- default-ubuntu-1604:   * template[/opt/mongo/mongo-keyfile] action create
+I, [2020-02-04T10:34:16.859505 #14952]  INFO -- default-ubuntu-1604:     - create new file /opt/mongo/mongo-keyfile
+I, [2020-02-04T10:34:16.859882 #14952]  INFO -- default-ubuntu-1604:     - update content in file /opt/mongo/mongo-keyfile from none to da9066
+I, [2020-02-04T10:34:16.860344 #14952]  INFO -- default-ubuntu-1604:     --- /opt/mongo/mongo-keyfile	2020-02-04 10:34:16.822621666 +0000
+I, [2020-02-04T10:34:16.861252 #14952]  INFO -- default-ubuntu-1604:     +++ /opt/mongo/.chef-mongo-keyfile20200204-1988-mu1jlv	2020-02-04 10:34:16.822621666 +0000
+I, [2020-02-04T10:34:16.861864 #14952]  INFO -- default-ubuntu-1604:     @@ -1 +1,17 @@
+I, [2020-02-04T10:34:16.862176 #14952]  INFO -- default-ubuntu-1604:     +pn69PbCyWf6GBiC2v51sbXuj6P9Y0tJba7+WcanDEl5ZtENEHIZDdJxTuSAkQ2We
+I, [2020-02-04T10:34:16.873003 #14952]  INFO -- default-ubuntu-1604:     +TG0SMUa0pgZZMlo5KbykLIdLWqna9xAr9A8irTYGEDynBFrKz124RqAU60WjeAVA
+I, [2020-02-04T10:34:16.873404 #14952]  INFO -- default-ubuntu-1604:     +qpVhqY8vaOiVxZ2tg5+3dp58KaVdhG5hrhoy+YoYij1scWBPWMnhuSn5N6jjbJSk
+I, [2020-02-04T10:34:16.874058 #14952]  INFO -- default-ubuntu-1604:     +rBJkxP4eUJgir2rCu1wpnsTYTUe2+Vdip3MI+y5qLpM5e2a6qA1fE+Vk5A1viaGS
+I, [2020-02-04T10:34:16.874384 #14952]  INFO -- default-ubuntu-1604:     +BJr1ZWY87OnUH1NjxkkCRs7O01R6Q5GLMgr64eWfNUzxvJ1JjkMnX3FrI4DoKhty
+I, [2020-02-04T10:34:16.874651 #14952]  INFO -- default-ubuntu-1604:     +cIeSwIVp6t5S3WL1KiEJTgQ6mCAf0S2gxmNXtAlucKEiuu77W6yPVh0sLpY0qRU8
+I, [2020-02-04T10:34:16.874886 #14952]  INFO -- default-ubuntu-1604:     +5bAdBOFqCopaOHOV8sAbc71ghf69lOdRiuHNCFjVTSa5Lj2VLuIDpU4itk2fyp6/
+I, [2020-02-04T10:34:16.875184 #14952]  INFO -- default-ubuntu-1604:     +XxfrrmmXzCVkmPBU1OHkdD8a6c8VJ/W3r63ZSM0zVZuIyTHpvMRJNIni5Ye4CmLG
+I, [2020-02-04T10:34:16.876024 #14952]  INFO -- default-ubuntu-1604:     +PRTXE9EB+Bv4vLNehinvgkcbGkMCU/IdxUxHRGvUhJprJtu4LVsZsEUujrKOONOf
+I, [2020-02-04T10:34:16.876374 #14952]  INFO -- default-ubuntu-1604:     +2Uj79Ofr8Yf1yn6r8vY1Ba/K4UQ4y3ZwAaBMKOLaeJX7y9sVYxQ2rr+pUpMDF06x
+I, [2020-02-04T10:34:16.876953 #14952]  INFO -- default-ubuntu-1604:     +YXIpCpzJ33lhzP+iJNQzUH0gWMrwk8UpSwa9PA7NM4FBwHULPaidQy/UEdV8od1/
+I, [2020-02-04T10:34:16.877211 #14952]  INFO -- default-ubuntu-1604:     +p6m7Kl74fNX63sw3g81r2e5Ireu+Ogvs8LV5b8p7lU/1ePCryw+jxwPmmQoKW5jR
+I, [2020-02-04T10:34:16.877522 #14952]  INFO -- default-ubuntu-1604:     +Q+Bv1Kx5P0pi/s/siYC7ttIqtJu0BF4bVTr4aTUOaCk2z1qQ6LUEwyYQkemaDi7H
+I, [2020-02-04T10:34:16.878077 #14952]  INFO -- default-ubuntu-1604:     +K0y26m722FvgRyChUw1+JfFDEhV2j+qXU1hhqgbcBiOU5hfadqd1/4NqJi2vVtOM
+I, [2020-02-04T10:34:16.878490 #14952]  INFO -- default-ubuntu-1604:     +MeZgFjc/VXRtkplpoVYTceq4a1VZDsJq73xWfeDaDNbvnVL5mCXtAuLBndAgUvVd
+I, [2020-02-04T10:34:16.878814 #14952]  INFO -- default-ubuntu-1604:     +aQtDEb5OVh2BrXr7o/IVn6vxSG9Nvnv7JwV1i+d4L7CcrUN+
+I, [2020-02-04T10:34:16.879103 #14952]  INFO -- default-ubuntu-1604:     - change mode from '' to '0400'
+I, [2020-02-04T10:34:16.942740 #14952]  INFO -- default-ubuntu-1604:   * execute[restart_mongod.service] action run
+I, [2020-02-04T10:34:16.942984 #14952]  INFO -- default-ubuntu-1604:     - execute sudo systemctl enable mongod.service
+I, [2020-02-04T10:34:16.954469 #14952]  INFO -- default-ubuntu-1604:   * bash[chown keyfile] action run
+I, [2020-02-04T10:34:16.954929 #14952]  INFO -- default-ubuntu-1604:     - execute "bash"  "/tmp/chef-script20200204-1988-rn1l7a"
+I, [2020-02-04T10:34:16.977152 #14952]  INFO -- default-ubuntu-1604:   * template[/etc/mongod.conf] action create
+I, [2020-02-04T10:34:16.977497 #14952]  INFO -- default-ubuntu-1604:     - update content in file /etc/mongod.conf from 956fef to c96e79
+I, [2020-02-04T10:34:16.977961 #14952]  INFO -- default-ubuntu-1604:     --- /etc/mongod.conf	2018-05-08 21:54:31.000000000 +0000
+I, [2020-02-04T10:34:16.978352 #14952]  INFO -- default-ubuntu-1604:     +++ /etc/.chef-mongod20200204-1988-erulzu.conf	2020-02-04 10:34:16.950685997 +0000
+I, [2020-02-04T10:34:16.978655 #14952]  INFO -- default-ubuntu-1604:     @@ -1,8 +1,12 @@
+I, [2020-02-04T10:34:16.978971 #14952]  INFO -- default-ubuntu-1604:      # mongod.conf
+I, [2020-02-04T10:34:16.979319 #14952]  INFO -- default-ubuntu-1604:      
+I, [2020-02-04T10:34:16.979654 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:16.980550 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:16.981101 #14952]  INFO -- default-ubuntu-1604:      # for documentation of all options, see:
+I, [2020-02-04T10:34:16.981494 #14952]  INFO -- default-ubuntu-1604:      #   http://docs.mongodb.org/manual/reference/configuration-options/
+I, [2020-02-04T10:34:16.982079 #14952]  INFO -- default-ubuntu-1604:      
+I, [2020-02-04T10:34:16.982501 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:16.983593 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:16.983962 #14952]  INFO -- default-ubuntu-1604:      # Where and how to store data.
+I, [2020-02-04T10:34:16.984299 #14952]  INFO -- default-ubuntu-1604:      storage:
+I, [2020-02-04T10:34:16.984642 #14952]  INFO -- default-ubuntu-1604: dbPath: /var/lib/mongodb
+I, [2020-02-04T10:34:16.984946 #14952]  INFO -- default-ubuntu-1604:     @@ -12,31 +16,51 @@
+I, [2020-02-04T10:34:16.985319 #14952]  INFO -- default-ubuntu-1604:      #  mmapv1:
+I, [2020-02-04T10:34:16.985653 #14952]  INFO -- default-ubuntu-1604:      #  wiredTiger:
+I, [2020-02-04T10:34:16.985960 #14952]  INFO -- default-ubuntu-1604:      
+I, [2020-02-04T10:34:16.986547 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:16.986885 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:16.987407 #14952]  INFO -- default-ubuntu-1604:      # where to write logging data.
+I, [2020-02-04T10:34:16.987755 #14952]  INFO -- default-ubuntu-1604:      systemLog:
+I, [2020-02-04T10:34:16.988595 #14952]  INFO -- default-ubuntu-1604: destination: file
+I, [2020-02-04T10:34:16.989273 #14952]  INFO -- default-ubuntu-1604: logAppend: true
+I, [2020-02-04T10:34:16.989592 #14952]  INFO -- default-ubuntu-1604: path: /var/log/mongodb/mongod.log
+I, [2020-02-04T10:34:16.990018 #14952]  INFO -- default-ubuntu-1604:      
+I, [2020-02-04T10:34:16.990670 #14952]  INFO -- default-ubuntu-1604:     -# network interfaces
+I, [2020-02-04T10:34:16.991171 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:16.991495 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:16.991905 #14952]  INFO -- default-ubuntu-1604:     +#network interfaces
+I, [2020-02-04T10:34:16.992558 #14952]  INFO -- default-ubuntu-1604:      net:
+I, [2020-02-04T10:34:16.992988 #14952]  INFO -- default-ubuntu-1604: port: 27017
+I, [2020-02-04T10:34:16.993297 #14952]  INFO -- default-ubuntu-1604:     -  bindIp: 127.0.0.1
+I, [2020-02-04T10:34:16.993664 #14952]  INFO -- default-ubuntu-1604:     +  bindIp: 0.0.0.0
+I, [2020-02-04T10:34:16.993987 #14952]  INFO -- default-ubuntu-1604:      
+I, [2020-02-04T10:34:16.994356 #14952]  INFO -- default-ubuntu-1604:      
+I, [2020-02-04T10:34:16.994649 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:16.994906 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:16.995146 #14952]  INFO -- default-ubuntu-1604:      #processManagement:
+I, [2020-02-04T10:34:16.995381 #14952]  INFO -- default-ubuntu-1604:      
+I, [2020-02-04T10:34:16.995631 #14952]  INFO -- default-ubuntu-1604:     -#security:
+I, [2020-02-04T10:34:16.995810 #14952]  INFO -- default-ubuntu-1604:      
+I, [2020-02-04T10:34:16.996108 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:16.996390 #14952]  INFO -- default-ubuntu-1604:     +security:
+I, [2020-02-04T10:34:16.996748 #14952]  INFO -- default-ubuntu-1604:     +  keyFile: /opt/mongo/mongo-keyfile
+I, [2020-02-04T10:34:16.997044 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:16.997519 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:16.997940 #14952]  INFO -- default-ubuntu-1604:      #operationProfiling:
+I, [2020-02-04T10:34:16.998342 #14952]  INFO -- default-ubuntu-1604:      
+I, [2020-02-04T10:34:16.998648 #14952]  INFO -- default-ubuntu-1604:     -#replication:
+I, [2020-02-04T10:34:16.998832 #14952]  INFO -- default-ubuntu-1604:      
+I, [2020-02-04T10:34:16.999071 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:16.999354 #14952]  INFO -- default-ubuntu-1604:     +replication:
+I, [2020-02-04T10:34:16.999667 #14952]  INFO -- default-ubuntu-1604:     +  replSetName: rs0
+I, [2020-02-04T10:34:16.999993 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:17.000224 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:17.000434 #14952]  INFO -- default-ubuntu-1604:      #sharding:
+I, [2020-02-04T10:34:17.000669 #14952]  INFO -- default-ubuntu-1604:      
+I, [2020-02-04T10:34:17.000859 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:17.001229 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:17.001524 #14952]  INFO -- default-ubuntu-1604:      ## Enterprise-Only Options:
+I, [2020-02-04T10:34:17.001760 #14952]  INFO -- default-ubuntu-1604:      
+I, [2020-02-04T10:34:17.002009 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:17.002235 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:17.002528 #14952]  INFO -- default-ubuntu-1604:      #auditLog:
+I, [2020-02-04T10:34:17.002764 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:17.002947 #14952]  INFO -- default-ubuntu-1604:     +
+I, [2020-02-04T10:34:17.003177 #14952]  INFO -- default-ubuntu-1604:      
+I, [2020-02-04T10:34:17.003362 #14952]  INFO -- default-ubuntu-1604:      #snmp:
+I, [2020-02-04T10:34:17.131337 #14952]  INFO -- default-ubuntu-1604:   * execute[restart_mongod] action run
+I, [2020-02-04T10:34:17.131541 #14952]  INFO -- default-ubuntu-1604:     - execute sudo systemctl restart mongod
+I, [2020-02-04T10:34:17.216114 #14952]  INFO -- default-ubuntu-1604: 
+I, [2020-02-04T10:34:17.216531 #14952]  INFO -- default-ubuntu-1604: Running handlers:
+I, [2020-02-04T10:34:17.216877 #14952]  INFO -- default-ubuntu-1604: Running handlers complete
+I, [2020-02-04T10:34:17.217180 #14952]  INFO -- default-ubuntu-1604: Chef Infra Client finished, 16/25 resources updated in 24 seconds
+I, [2020-02-04T10:34:17.228901 #14952]  INFO -- default-ubuntu-1604: Downloading files from <default-ubuntu-1604>
+I, [2020-02-04T10:34:17.280219 #14952]  INFO -- default-ubuntu-1604: Finished converging <default-ubuntu-1604> (0m51.58s).
+I, [2020-02-04T10:34:17.280583 #14952]  INFO -- default-ubuntu-1604: -----> Setting up <default-ubuntu-1604>...
+I, [2020-02-04T10:34:17.282685 #14952]  INFO -- default-ubuntu-1604: Finished setting up <default-ubuntu-1604> (0m0.00s).
+I, [2020-02-04T10:34:17.283047 #14952]  INFO -- default-ubuntu-1604: -----> Verifying <default-ubuntu-1604>...
+I, [2020-02-04T10:34:18.632879 #14952]  INFO -- default-ubuntu-1604: Loaded tests from {:path=>"C:.opscode.mongod-replica-config.test.integration.default"} 
+I, [2020-02-04T10:34:20.022558 #14952]  INFO -- default-ubuntu-1604: Finished verifying <default-ubuntu-1604> (0m2.74s).

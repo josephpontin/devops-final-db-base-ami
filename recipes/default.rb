@@ -38,10 +38,10 @@ template '/lib/systemd/system/mongod.service' do
   notifies :run, 'execute[restart_mongod.service]', :immediately
 end
 
-template '/etc/hosts' do
-  source 'hosts.erb'
-  notifies :run, 'execute[restart_mongod.service]', :immediately
-end
+# template '/etc/hosts' do
+#   source 'hosts.erb'
+#   notifies :run, 'execute[restart_mongod.service]', :immediately
+# end
 
 directory '/opt/mongo' do
   recursive true
@@ -57,9 +57,9 @@ template '/opt/mongo/mongo-keyfile' do
   notifies :run, 'execute[restart_mongod.service]', :immediately
 end
 
-template '/etc/cloud/cloud.cfg' do
-  source 'cloud.cfg.erb'
-end
+# template '/etc/cloud/cloud.cfg' do
+#   source 'cloud.cfg.erb'
+# end
 
 bash 'chown keyfile' do
   user 'root'
